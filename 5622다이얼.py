@@ -1,22 +1,21 @@
 a = input().upper()
 
-if a == 'A' or 'B' or 'C' :
-    a = str(3)
-elif a == 'D' or 'E' or 'F':
-    a = str(4)
-elif a == 'G' or 'H' or 'I':
-    a = str(5)
-elif a == 'J' or 'K' or 'L':
-    a = str(6)
-elif a == 'M' or 'N' or 'O':
-    a = str(7)
-elif a == 'P' or 'Q' or 'R' or 'S':
-    a = str(8)
-elif a == 'T' or 'U' or 'V':
-    a = str(9)
-elif a == 'W' or 'X' or 'Y' or 'Z':
-    a = str(10)
-
-print(a)
-# for i in a:
-    
+cnt = 0
+for i in a:
+    if i in ['A','B','C']:
+        cnt += 3
+    elif i in ['D','E','F']:
+        cnt += 4
+    elif i in ['G','H','I']:
+        cnt += 5
+    elif i in ['J','K','L']:
+        cnt += 6
+    elif i in ['M','N','O']:
+        cnt += 7
+    elif i in ['P','Q','R','S']:
+        cnt += 8
+    elif i in ['T','U','V']:
+        cnt += 9
+    elif i in ['W','X','Y','Z']:
+        cnt += 10
+print(cnt)

@@ -2,7 +2,7 @@ c = int(input())
 
 for _ in range(c):
     count = 0
-    a = list(map(int,input().split(' ')))
+    a = list(map(int,input().split()))
     b = (sum(a) - a[0]) / a[0] # 한 줄 평균
     for i in a[1:]:
         if (i > b):
