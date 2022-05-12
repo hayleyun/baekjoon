@@ -9,3 +9,4 @@ for _ in range(c):
             count += 1
             result = count / a[0] * 100
     print(f'{result:.3f}%')
+    
