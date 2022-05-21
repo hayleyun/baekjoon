@@ -1,5 +1,5 @@
 c = int(input())
-
+d = []
 for _ in range(c):
     count = 0
     a = list(map(int,input().split()))
@@ -8,5 +8,9 @@ for _ in range(c):
         if (i > b):
             count += 1
             result = count / a[0] * 100
-    print(f'{result:.3f}%')
-    
+        else:
+            result = count /a[0] * 100
+    d.append(result)
+
+for j in range(len(d)):
+    print(f'{d[j]:.3f}%')
